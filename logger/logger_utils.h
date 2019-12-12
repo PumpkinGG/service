@@ -44,7 +44,6 @@ public:
     size_t length();
 
     // Delete buffered data from front
-    // Return really deleted bytes
     // Not really delete, just move read_index_
     void delete_data(const size_t len);
 

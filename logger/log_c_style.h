@@ -1,13 +1,5 @@
-/*
- * @Description: Copyright(c) All rights reserved.
- * @Company: YUSUR
- * @Author: Kaihua Guo
- * @Date: 2019-12-03 11:06:23
- * @LastEditors: Kaihua Guo
- * @LastEditTime: 2019-12-03 11:11:36
- */
-#ifndef _CORE_LOGGER_LOG_C_STYLE_H_
-#define _CORE_LOGGER_LOG_C_STYLE_H_
+#ifndef _LOGGER_LOG_C_STYLE_H_
+#define _LOGGER_LOG_C_STYLE_H_
 
 #include "logger/async_logger.h"
 
@@ -15,7 +7,7 @@
 #include <memory>
 #include <unordered_map>
 
-namespace doe
+namespace logger
 {
 
 class LogCStyle
@@ -56,6 +48,6 @@ private:
     std::unique_ptr<AsyncLogger> logger_;
 };
 
-} // namespace doe
+} // namespace logger
 
-#endif // _CORE_LOGGER_LOG_C_STYLE_H_
+#endif // _LOGGER_LOG_C_STYLE_H_

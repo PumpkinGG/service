@@ -1,20 +1,12 @@
-/*
- * @Description: BufferBlock(Manage a block of buffer) & LogFile(Manage log files).
- * @Company: YUSUR
- * @Author: Kaihua Guo
- * @Date: 2019-11-29 16:06:01
- * @LastEditors: Kaihua Guo
- * @LastEditTime: 2019-12-03 11:18:00
- */
-#ifndef _CORE_LOGGER_LOGGER_UTILS_H_
-#define _CORE_LOGGER_LOGGER_UTILS_H_
+#ifndef _LOGGER_LOGGER_UTILS_H_
+#define _LOGGER_LOGGER_UTILS_H_
 
 #include <fstream>
 #include <string>
 #include <memory>
 #include <unordered_map>
 
-namespace doe {
+namespace logger {
 
 const size_t kSmallBlockSize = 4 * 1024;
 const size_t kLargeBlockSize = 1 * 1024 * 1024;
@@ -120,6 +112,6 @@ private:
     size_t written_bytes_;
 };
 
-} // namespace doe
+} // namespace logger
 
-#endif // _CORE_LOGGER_LOGGER_UTILS_H_
+#endif // _LOGGER_LOGGER_UTILS_H_

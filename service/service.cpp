@@ -1,7 +1,7 @@
 ﻿#include "service/service.h"
 #include "logger/logger.h"
 
-using namespace doe;
+using namespace logger;
 
 SERVICE_STATUS g_ServiceStatus;
 SERVICE_STATUS_HANDLE g_ServiceStatusHandle;

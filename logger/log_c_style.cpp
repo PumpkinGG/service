@@ -1,11 +1,3 @@
-/*
- * @Description: Copyright(c) All rights reserved.
- * @Company: YUSUR
- * @Author: Kaihua Guo
- * @Date: 2019-11-30 14:29:50
- * @LastEditors: Kaihua Guo
- * @LastEditTime: 2019-12-05 20:44:36
- */
 #include "logger/log_c_style.h"
 #include "logger/logger_utils.h"
 
@@ -14,7 +6,7 @@
 #include <thread>
 #include <sstream>
 
-namespace doe {
+namespace logger {
 
 LogCStyle& LogCStyle::get_instance()
 {
@@ -122,4 +114,4 @@ unsigned long long LogCStyle::get_thread_id()
     return std::stoull(ss.str());
 }
 
-} // namespace doe
+} // namespace logger

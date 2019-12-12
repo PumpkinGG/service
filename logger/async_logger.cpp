@@ -1,14 +1,6 @@
-/*
- * @Description: Copyright(c) All rights reserved.
- * @Company: YUSUR
- * @Author: Kaihua Guo
- * @Date: 2019-11-30 14:28:18
- * @LastEditors: Kaihua Guo
- * @LastEditTime: 2019-12-03 11:12:45
- */
 #include "logger/async_logger.h"
 
-namespace doe {
+namespace logger {
 
 AsyncLogger::AsyncLogger(const char* base_name) :
     file_path_("./"),
@@ -161,4 +153,4 @@ std::string AsyncLogger::pack_file_name(LogLevel level, int tag)
     return file_name;
 }
 
-} // namespace doe
+} // namespace logger

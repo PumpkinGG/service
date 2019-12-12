@@ -1,13 +1,5 @@
-/*
- * @Description: Infrastructure of async multi-thread logger.
- * @Company: YUSUR
- * @Author: Kaihua Guo
- * @Date: 2019-11-30 14:28:00
- * @LastEditors: Kaihua Guo
- * @LastEditTime: 2019-12-03 11:23:27
- */
-#ifndef _CORE_LOGGER_ASYNC_LOGGER_H_
-#define _CORE_LOGGER_ASYNC_LOGGER_H_
+#ifndef _LOGGER_ASYNC_LOGGER_H_
+#define _LOGGER_ASYNC_LOGGER_H_
 
 #include "logger/logger_utils.h"
 
@@ -21,7 +13,7 @@
 #include <condition_variable>
 #include <chrono>
 
-namespace doe {
+namespace logger {
 
 // Notify logging thread every [kLogInterval] seconds.
 const std::chrono::seconds kLogInterval = std::chrono::seconds(3);
@@ -71,6 +63,6 @@ private:
     FileMap files_;
 };
 
-} // namespace doe
+} // namespace logger
 
-#endif // _CORE_LOGGER_ASYNC_LOGGER_H_
+#endif // _LOGGER_ASYNC_LOGGER_H_

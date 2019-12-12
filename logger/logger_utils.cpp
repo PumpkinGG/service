@@ -1,11 +1,3 @@
-/*
- * @Description: Copyright(c) All rights reserved.
- * @Company: YUSUR
- * @Author: Kaihua Guo
- * @Date: 2019-11-29 16:06:09
- * @LastEditors: Kaihua Guo
- * @LastEditTime: 2019-12-03 11:15:19
- */
 #include "logger/logger_utils.h"
 
 #include <cstring>
@@ -17,7 +9,7 @@
 
 //#define LOGGER_DEBUG
 
-namespace doe {
+namespace logger {
 
 std::string utils::get_current_system_time()
 {
@@ -223,4 +215,4 @@ void LogFile::flush()
     file_.flush();
 }
 
-} // namespace doe
+} // namespace logger
